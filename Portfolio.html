@@ -1,0 +1,496 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Portfolio of a senior software engineer: projects, experience, skills, writing, and contact." />
+  <meta name="theme-color" content="#0f172a" />
+  <meta property="og:title" content="Software Engineer • Portfolio" />
+  <meta property="og:description" content="Selected work, engineering leadership, open-source, and writing." />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="https://picsum.photos/1200/630" />
+  <title>NWOKE PRAISEGOD• Software Engineer</title>
+  <link rel="stylesheet" href="/Asset/Portfolio.css" />
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "NWOKE PRAISEGOD",
+    "jobTitle": "Software Engineer",
+    "url": "https://your-domain.example",
+    "sameAs": [
+      "https://github.com/yourhandle",
+      "https://www.linkedin.com/in/yourhandle"
+    ]
+  }
+  </script>
+</head>
+<body>
+  <!-- =============================
+       Header / Navigation
+  ============================== -->
+  <header>
+    <div class="container nav" role="navigation" aria-label="Primary">
+      <a class="brand" href="#home" aria-label="Home">
+        <span class="dot" aria-hidden="true"></span>
+        <span>NWOKE PRAISEGOD</span>
+      </a>
+      <nav>
+        <ul>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#writing">Writing</a></li>
+          <li><a href="#contact">Contact</a></li>
+          <li>
+            <button id="themeToggle" class="theme-toggle" aria-pressed="false" aria-label="Toggle theme">🌙</button>
+          </li>
+        </ul>
+      </nav>
+      <button class="menu-btn btn" id="menuBtn" aria-controls="mobileMenu" aria-expanded="false">☰ Menu</button>
+      <div class="mobile-menu" id="mobileMenu" role="menu" aria-label="Mobile">
+        <a role="menuitem" href="#projects">Projects</a>
+        <a role="menuitem" href="#experience">Experience</a>
+        <a role="menuitem" href="#skills">Skills</a>
+        <a role="menuitem" href="#writing">Writing</a>
+        <a role="menuitem" href="#contact">Contact</a>
+        <button id="themeToggleM" class="theme-toggle" aria-pressed="false" aria-label="Toggle theme">🌙</button>
+      </div>
+    </div>
+  </header>
+
+  <!-- =============================
+       Hero
+  ============================== -->
+<main id="home" class="container section">
+    <div class="hero">
+      <div>
+        <span class="pill">Available for consulting • Keffi / Remote</span>
+        <h1 class="headline" data-animate>Building reliable software, at scale.</h1>
+        <p class="subhead max-w-lg" data-animate>
+          Software engineer focused on platform architecture, APIs, mobile, and delightful UX. I ship
+          maintainable systems with measurable impact.
+        </p>
+        <div class="actions">
+          <a class="btn primary" href="#projects">View Projects →</a>
+          <a class="btn" href="./YOUR_RESUME.pdf" download>Download Résumé</a>
+          <a class="btn" href="https://github.com/yourhandle" target="_blank" rel="noreferrer">GitHub</a>
+          <a class="btn" href="https://www.linkedin.com/in/yourhandle" target="_blank" rel="noreferrer">LinkedIn</a>
+        </div>
+        <div class="quick-stats">
+          <div class="card" aria-label="Years experience"><strong>1+</strong> yrs • Web & Mobile</div>
+          <div class="card" aria-label="Uptime"><strong>73.3%</strong> SLO platforms</div>
+          <div class="card" aria-label="OSS"><strong>1.2k</strong> ⭐ open-source</div>
+        </div>
+      </div>
+      <div>
+        <img class="headshot" src="/Asset/Images/ChatGPT Image Aug 27, 2025, 10_44_00 AM.png" alt="NWOKE PRAISEGOD" loading="lazy" />
+      </div>
+    </div>
+  </main>
+
+  <!-- =============================
+       Selected Projects
+  ============================== -->
+  <section id="projects" class="container section">
+    <div class="row" style="align-items: end; justify-content: space-between">
+      <h2>Selected Projects</h2>
+      <div class="filters" role="tablist" aria-label="Project filters">
+        <button class="chip active" data-filter="all" role="tab" aria-selected="true">All</button>
+        <button class="chip" data-filter="web" role="tab">Web</button>
+        <button class="chip" data-filter="mobile" role="tab">Mobile</button>
+        <button class="chip" data-filter="ml" role="tab">ML/AI</button>
+        <button class="chip" data-filter="platform" role="tab">Platform</button>
+      </div>
+    </div>
+    
+ <div class="grid grid-3" id="projectGrid">
+      <!-- Project 1 -->
+      <article class="card project" data-tags="web platform" data-animate>
+        <div class="thumb"><img src="/Asset/Images/beauty.jpeg" alt="Project dashboard screenshot" loading="lazy" /></div>
+        <div>
+          <h3>Realtime Analytics Platform</h3>
+          <p class="muted">Event pipeline with Kafka + ClickHouse; web UI in React; <abbr title="role">lead</abbr> on ingestion, SLOs, and auth.</p>
+          <div class="tags">
+            <span class="tag">TypeScript</span>
+            <span class="tag">React</span>
+            <span class="tag">Node</span>
+            <span class="tag">Kafka</span>
+            <span class="tag">ClickHouse</span>
+          </div>
+          <div class="links">
+            <a href="#" data-modal="#p1">Case study</a>
+            <a href="https://github.com/yourhandle/analytics" target="_blank" rel="noreferrer">Code</a>
+            <a href="https://analytics-demo.example" target="_blank" rel="noreferrer">Live</a>
+          </div>
+        </div>
+      </article>
+
+      <!-- Project 2 -->
+      <article class="card project" data-tags="mobile ml" data-animate>
+        <div class="thumb"><img src="/Asset/Images/Capture12.PNG" alt="Mobile app mockups" loading="lazy" /></div>
+        <div>
+          <h3>Offline-first Notes (OCR)</h3>
+          <p class="muted">Cross-platform notes app with on-device OCR and search; sync via CRDTs.</p>
+          <div class="tags">
+            <span class="tag">Flutter</span>
+            <span class="tag">Tesseract</span>
+            <span class="tag">CRDT</span>
+            <span class="tag">SQLite</span>
+          </div>
+          <div class="links">
+            <a href="#" data-modal="#p2">Case study</a>
+            <a href="https://github.com/yourhandle/offline-notes" target="_blank" rel="noreferrer">Code</a>
+          </div>
+        </div>
+      </article>
+
+      <!-- Project 3 -->
+      <article class="card project" data-tags="web" data-animate>
+        <div class="thumb"><img src="/Asset/Images/Capture10.PNG" alt="Landing page visual" loading="lazy" /></div>
+        <div>
+          <h3>Payments SDK + Demo</h3>
+          <p class="muted">Embeddable web SDK with PCI-compliant tokenization and example storefront.</p>
+          <div class="tags">
+            <span class="tag">Web Components</span>
+            <span class="tag">Vite</span>
+            <span class="tag">Playwright</span>
+          </div>
+          <div class="links">
+            <a href="#" data-modal="#p3">Case study</a>
+            <a href="https://github.com/yourhandle/payments-sdk" target="_blank" rel="noreferrer">Code</a>
+          </div>
+        </div>
+      </article>
+
+      <!-- Project 4 -->
+      <article class="card project" data-tags="platform" data-animate>
+        <div class="thumb"><img src="/Asset/Images/Capture1.PNG" alt="Infra diagram" loading="lazy" /></div>
+        <div>
+          <h3>Feature Flags Service</h3>
+          <p class="muted">Multi-tenant flags with SDKs, audit trails, and rollout strategies.</p>
+          <div class="tags">
+            <span class="tag">Go</span>
+            <span class="tag">Postgres</span>
+            <span class="tag">gRPC</span>
+            <span class="tag">Kubernetes</span>
+          </div>
+          <div class="links">
+            <a href="#" data-modal="#p4">Case study</a>
+          </div>
+        </div>
+      </article>
+
+      <!-- Project 5 -->
+      <article class="card project" data-tags="web ml" data-animate>
+        <div class="thumb"><img src="/Asset/Images/Capture13.PNG" alt="ML results" loading="lazy" /></div>
+        <div>
+          <h3>Semantic Search for Docs</h3>
+          <p class="muted">Document embedding pipeline; hybrid BM25 + vector search; RAG demo.</p>
+          <div class="tags">
+            <span class="tag">Python</span>
+            <span class="tag">FastAPI</span>
+            <span class="tag">Faiss</span>
+          </div>
+          <div class="links">
+            <a href="#" data-modal="#p5">Case study</a>
+          </div>
+        </div>
+      </article>
+
+      <!-- Project 6 -->
+      <article class="card project" data-tags="mobile" data-animate>
+        <div class="thumb"><img src="/Asset/Images/IMG-20250506-WA0102.jpg" alt="Wearable app" loading="lazy" /></div>
+        <div>
+          <h3>Wearable Health Companion</h3>
+          <p class="muted">BLE sensors + anomaly detection; React Native app with charts.</p>
+          <div class="tags">
+            <span class="tag">React Native</span>
+            <span class="tag">BLE</span>
+            <span class="tag">TensorFlow Lite</span>
+          </div>
+          <div class="links">
+            <a href="#" data-modal="#p6">Case study</a>
+          </div>
+        </div>
+      </article>
+
+
+</div>
+</section>
+
+  <!-- =============================
+       Experience (Timeline)
+  ============================== -->
+  <section id="experience" class="container section">
+    <h2>Experience</h2>
+    <div class="timeline">
+      <div class="item card" data-animate>
+        <div class="row" style="justify-content:space-between; align-items:baseline">
+          <strong>Senior Software Engineer • Acme Fintech</strong>
+          <span class="badge">2022 — Present</span>
+        </div>
+        <ul>
+          <li>Led migration to event-driven architecture; cut latency by <strong>43%</strong>.</li>
+          <li>Implemented SLOs and on-call playbooks; reduced incidents by <strong>~60%</strong>.</li>
+          <li>Mentored 5 engineers; built growth framework for career progression.</li>
+        </ul>
+      </div>
+      <div class="item card" data-animate>
+        <div class="row" style="justify-content:space-between; align-items:baseline">
+          <strong>Software Engineer • RetailCo</strong>
+          <span class="badge">2019 — 2022</span>
+        </div>
+        <ul>
+          <li>Shipped React storefront to 2M MAU; improved conversion by <strong>+7.8%</strong>.</li>
+          <li>Designed feature flagging + A/B testing platform used across org.</li>
+        </ul>
+      </div>
+      <div class="item card" data-animate>
+        <div class="row" style="justify-content:space-between; align-items:baseline">
+          <strong>Intern • Open Source</strong>
+          <span class="badge">2018 — 2019</span>
+        </div>
+        <ul>
+          <li>Contributed to OSS libraries; presented at local meetups.</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- =============================
+       Skills
+  ============================== -->
+  <section id="skills" class="container section">
+    <h2>Skills</h2>
+    <div class="grid grid-2">
+      <div class="card" data-animate>
+        <h3>Languages & Frameworks</h3>
+        <div class="skill"><span>TypeScript</span><div class="bar"><span style="width: 90%"></span></div></div>
+        <div class="skill"><span>Go</span><div class="bar"><span style="width: 75%"></span></div></div>
+        <div class="skill"><span>Python</span><div class="bar"><span style="width: 85%"></span></div></div>
+        <div class="skill"><span>React / RN</span><div class="bar"><span style="width: 88%"></span></div></div>
+      </div>
+      <div class="card" data-animate>
+        <h3>Cloud & DevOps</h3>
+        <div class="skill"><span>AWS / GCP</span><div class="bar"><span style="width: 80%"></span></div></div>
+        <div class="skill"><span>Kubernetes</span><div class="bar"><span style="width: 70%"></span></div></div>
+        <div class="skill"><span>CI/CD</span><div class="bar"><span style="width: 82%"></span></div></div>
+        <div class="skill"><span>Observability</span><div class="bar"><span style="width: 78%"></span></div></div>
+      </div>
+    </div>
+    <div class="space"></div>
+    <div class="card" data-animate>
+      <h3>Toolbox</h3>
+      <div class="tags">
+        <span class="tag">Postgres</span>
+        <span class="tag">Redis</span>
+        <span class="tag">gRPC</span>
+        <span class="tag">GraphQL</span>
+        <span class="tag">Docker</span>
+        <span class="tag">Terraform</span>
+        <span class="tag">Playwright</span>
+        <span class="tag">Jest</span>
+        <span class="tag">Sentry</span>
+        <span class="tag">Datadog</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- =============================
+       Writing / Speaking
+  ============================== -->
+  <section id="writing" class="container section">
+    <div class="row" style="align-items: end; justify-content: space-between">
+      <h2>Writing & Speaking</h2>
+      <a class="pill" href="#" aria-label="View all posts">View all →</a>
+    </div>
+    <div class="grid grid-3">
+      <article class="card" data-animate>
+        <h3>Beyond REST: tRPC in Production</h3>
+        <p class="muted">How we simplified type-safe APIs across web and mobile.</p>
+        <div class="tags"><span class="tag">TypeScript</span><span class="tag">tRPC</span></div>
+      </article>
+      <article class="card" data-animate>
+        <h3>Incident Response as Code</h3>
+        <p class="muted">Playbooks, automation, and lessons from real outages.</p>
+        <div class="tags"><span class="tag">DevOps</span><span class="tag">SRE</span></div>
+      </article>
+      <article class="card" data-animate>
+        <h3>Designing for Offline</h3>
+        <p class="muted">CRDTs, sync conflicts, and a human-first UX.</p>
+        <div class="tags"><span class="tag">Mobile</span><span class="tag">UX</span></div>
+      </article>
+    </div>
+  </section>
+
+  <!-- =============================
+       Testimonials (Carousel)
+  ============================== -->
+  <section class="container section">
+    <h2>Testimonials</h2>
+    <div class="carousel card" aria-roledescription="carousel" aria-label="Testimonials">
+      <div class="carousel-track" id="testimonialTrack">
+        <div class="testimonial">
+          <p class="max-w-lg">“Your Name is the rare engineer who balances deep technical expertise with thoughtful product instincts. A force multiplier for any team.”</p>
+          <p class="muted">— CTO, Acme Fintech</p>
+        </div>
+        <div class="testimonial">
+          <p class="max-w-lg">“Led a complex migration with calm leadership and crisp communication. The new platform paid for itself in months.”</p>
+          <p class="muted">— VP Eng, RetailCo</p>
+        </div>
+        <div class="testimonial">
+          <p class="max-w-lg">“Mentors with generosity; raises the bar on code quality and developer experience.”</p>
+          <p class="muted">— Staff Eng, Partner Team</p>
+        </div>
+      </div>
+      <div class="row" style="justify-content:space-between; align-items:center; margin-top:.75rem">
+        <button class="btn" id="prevT" aria-label="Previous testimonial">← Prev</button>
+        <div class="pill" id="tDots" aria-hidden="true">1 • 3</div>
+        <button class="btn" id="nextT" aria-label="Next testimonial">Next →</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- =============================
+       Contact
+  ============================== -->
+  <section id="contact" class="container section">
+    <h2>Contact</h2>
+    <div class="grid grid-2">
+      <form class="card" id="contactForm" novalidate>
+        <div class="row">
+          <label class="sr-only" for="name">Name</label>
+          <input id="name" name="name" placeholder="Name" required style="flex:1; padding:.9rem; border-radius:12px; border:1px solid rgba(148,163,184,.25); background:transparent; color:var(--text)">
+          <label class="sr-only" for="email">Email</label>
+          <input id="email" name="email" type="email" placeholder="Email" required style="flex:1; padding:.9rem; border-radius:12px; border:1px solid rgba(148,163,184,.25); background:transparent; color:var(--text)">
+        </div>
+        <div style="margin-top:.75rem">
+          <label class="sr-only" for="message">Message</label>
+          <textarea id="message" name="message" placeholder="Project details, timelines, goals..." rows="6" required style="width:100%; padding:.9rem; border-radius:12px; border:1px solid rgba(148,163,184,.25); background:transparent; color:var(--text)"></textarea>
+        </div>
+        <div class="row" style="justify-content: space-between; align-items:center; margin-top:.75rem">
+          <small id="formStatus" class="muted">I usually reply within 24h.</small>
+          <button class="btn primary" type="submit">Send Message</button>
+        </div>
+      </form>
+      <div class="card">
+        <h3>Let’s build something great</h3>
+        <p class="muted">Email: <a href="mailto:you@domain.com">nwokepraisegod2013@gmail.com</a></p>
+        <p class="muted">Location: Keffi, NG • Remote-friendly (UTC+1)</p>
+        <div class="tags">
+          <span class="tag">Consulting</span>
+          <span class="tag">Mentoring</span>
+          <span class="tag">Mobile Apps</span>
+          <span class="tag">APIs & Platforms</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container row" style="justify-content:space-between; align-items:center">
+      <div>© <span id="year"></span> JESUS CHRIST</div>
+      <div class="row">
+        <a class="pill" href="#home">Back to top ↑</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- =============================
+       Modals (Project Case Studies)
+  ============================== -->
+  <dialog id="p1" aria-label="Realtime Analytics Platform case study">
+    <div class="modal-head">
+      <strong>Realtime Analytics Platform</strong>
+      <button class="btn" data-close>✕</button>
+    </div>
+    <div class="modal-body">
+      <p>Designed and delivered an event ingestion pipeline processing 2B+ events/day with sub‑second latency.</p>
+      <ul>
+        <li>Multi-region Kafka, topic compaction, consumer groups.</li>
+        <li>Columnar storage in ClickHouse; materialized views.</li>
+        <li>RBAC, tenant isolation, and rate limiting.</li>
+      </ul>
+      <p><em>Impact:</em> 43% latency reduction; $120k/mo infra savings.</p>
+    </div>
+  </dialog>
+
+  <dialog id="p2" aria-label="Offline-first Notes case study">
+    <div class="modal-head">
+      <strong>Offline-first Notes (OCR)</strong>
+      <button class="btn" data-close>✕</button>
+    </div>
+    <div class="modal-body">
+      <p>On-device OCR + semantic search with conflict-free sync (CRDTs). Battery-friendly background tasks.</p>
+      <ul>
+        <li>Flutter + SQLite + Rust OCR bindings.</li>
+        <li>CRDT-based merge strategy; end-to-end encryption.</li>
+      </ul>
+      <p><em>Impact:</em> #2 PH launch; 50k MAU in 6 months.</p>
+    </div>
+  </dialog>
+
+  <dialog id="p3" aria-label="Payments SDK case study">
+    <div class="modal-head">
+      <strong>Payments SDK + Demo</strong>
+      <button class="btn" data-close>✕</button>
+    </div>
+    <div class="modal-body">
+      <p>Tokenization + 3DS flows with a drop-in web component. Comprehensive test harness.</p>
+      <ul>
+        <li>Custom elements; framework-agnostic.</li>
+        <li>PCI-DSS scope minimization.</li>
+      </ul>
+      <p><em>Impact:</em> Integrated by 20+ merchants in first quarter.</p>
+    </div>
+  </dialog>
+
+  <dialog id="p4" aria-label="Feature Flags Service case study">
+    <div class="modal-head">
+      <strong>Feature Flags Service</strong>
+      <button class="btn" data-close>✕</button>
+    </div>
+    <div class="modal-body">
+      <p>Strategy-based rollouts (percentage, user targeting, time windows) with SDKs and audit trails.</p>
+      <ul>
+        <li>Go microservice; Postgres; Redis cache.</li>
+        <li>gRPC + REST; multi-tenant design.</li>
+      </ul>
+      <p><em>Impact:</em> Enabled safe deployments; 30% faster experimentation.</p>
+    </div>
+  </dialog>
+
+  <dialog id="p5" aria-label="Semantic Search case study">
+    <div class="modal-head">
+      <strong>Semantic Search for Docs</strong>
+      <button class="btn" data-close>✕</button>
+    </div>
+    <div class="modal-body">
+      <p>Hybrid search combining BM25 with vector similarity. Lightweight RAG demo for FAQs.</p>
+      <ul>
+        <li>FastAPI + Faiss + Celery jobs.</li>
+        <li>Chunking heuristics; metadata filtering.</li>
+      </ul>
+      <p><em>Impact:</em> +22% search satisfaction in internal tests.</p>
+    </div>
+  </dialog>
+
+  <dialog id="p6" aria-label="Wearable Health Companion case study">
+    <div class="modal-head">
+      <strong>Wearable Health Companion</strong>
+      <button class="btn" data-close>✕</button>
+    </div>
+    <div class="modal-body">
+      <p>BLE sensor streaming + on-device anomaly detection. HIPAA-friendly architecture.</p>
+      <ul>
+        <li>React Native + Reanimated; native modules for BLE.</li>
+        <li>Model distilled for edge; energy-aware sampling.</li>
+      </ul>
+      <p><em>Impact:</em> Pilot across 3 clinics; reduced false alerts by 35%.</p>
+    </div>
+  </dialog>
+
+  <script src="/Asset/Portfolio.js"></script>
+</body>
+</html>
