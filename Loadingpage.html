@@ -62,7 +62,7 @@
    
   </div>
   <Script>
-    const portfolioUrl = "index.html"; /*<-- Change this to your portfolio file*/
+    const indexUrl = "index.html"; /*<-- Change this to your portfolio file*/
     const loader = document.getElementById("loader");
 
     // Fixed wait time before redirect (4seconds)
@@ -71,10 +71,11 @@
     setTimeout(() => {
       loader.classList.add("fade-out");
       setTimeout(() => {
-        window.location.href = portfolioUrl;
+        window.location.href = indexUrl;
       },1000) // mather fade-out duration
     }, waitTime);
   </Script>
 </body>
 
 </html>
+
