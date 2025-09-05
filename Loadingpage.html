@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Loading</title>
+  <style>
+    body{
+      margin: 0;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background: #0d1117;  /*professional*/
+      font-family: Arial, sans-serif;
+      overflow: hidden;
+     }
+     .loader{
+      text-align: center;
+      color: #f0f6fc; /*professional*/
+      transition: opacity 1s ease; /*for smooth fading*/
+     }
+     .gear{
+      width: 70px; 
+      height: 70px;
+      margin: 20px auto;
+      display: block;
+      transform-origin: 50% 50%;
+      animation: spin 2s linear infinite;
+      filter: invert(1) brightness(2); /*turns black gear white*/
+       /* animation: bounce 1.5s infinite;  */
+     }
+     /* @keyframes bounce {
+         0%, 100% { transform: translateY(0); }
+         50% { transform: translateY(-30px);}
+     } */
+  .gear.spinning {
+    animation: spin 2s linear infinite; /* 2s for one full rotation */
+  }
+
+  /* spin animation */
+  @keyframes spin {
+    from { transform: rotate(0deg); }
+    to   { transform: rotate(360deg); }
+  }
+     .text{
+      font-size: 1.3rem;
+      font-weight: bold;
+      letter-spacing: 2px; /*for letter spacement*/
+      color: #58a6ff;
+     }
+     .fade-out{
+      opacity: 0;
+     }
+  </style>
+</head>
+<body>
+  <div class="loader" id="loader">
+   <img src="/ChatGPT Image Sep 5, 2025, 12_25_20 PM.png" alt="Gear Icon" class="gear">
+  <div class="text">Nwoke • PraiseGod • Onyinyechukwu</div>
+    
+   
+  </div>
+  <Script>
+    const portfolioUrl = "portfolio.html"; /*<-- Change this to your portfolio file*/
+    const loader = document.getElementById("loader");
+
+    // Fixed wait time before redirect (4seconds)
+    const waitTime = 4000;
+
+    setTimeout(() => {
+      loader.classList.add("fade-out");
+      setTimeout(() => {
+        window.location.href = portfolioUrl;
+      },1000) // mather fade-out duration
+    }, waitTime);
+  </Script>
+</body>
+</html>
